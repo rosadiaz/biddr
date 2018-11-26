@@ -20,19 +20,19 @@ const AuctionForm = props => {
   return (
     <form className="AuctionForm" onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="title">Title</label>
+        <label htmlFor="title">Title</label> <br/>
         <input name="title" id="title" />
       </div>
       <div>
-        <label htmlFor="details">Details</label>
+        <label htmlFor="details">Details</label><br/>
         <textarea name="details" id="details" cols="60" rows="4" />
       </div>
       <div>
-        <label htmlFor="end_date">Ends on</label>
+        <label htmlFor="end_date">Ends on</label><br/>
         <input type="date" name="end_date" id="end_date" cols="60" rows="4" />
       </div>
       <div>
-        <label htmlFor="reserve_price">Reserve Price $</label>
+        <label htmlFor="reserve_price">Reserve Price $</label><br/>
         <input type="text" pattern="[0-9]*" name="reserve_price" id="reserve_price" cols="60" rows="4" />
       </div>
       <div>

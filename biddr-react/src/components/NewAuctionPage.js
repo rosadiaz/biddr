@@ -33,10 +33,12 @@ class NewAuctionPage extends Component {
       // );
     //}
     return (
-      <div>
+      <main>
       	<h1> New Auction </h1>
-        <AuctionForm onSubmit={this.createAuction}/>
-      </div>
+        <div>
+          <AuctionForm onSubmit={this.createAuction}/>
+        </div>
+      </main>
     );
   }
 }
