@@ -1,7 +1,8 @@
 import React from "react";
+// import DatePicker from "react-datepicker";
+// import "react-datepicker/dist/react-datepicker.css";
 
 const AuctionForm = props => {
-  console.log(props)
   const handleSubmit = event => {
     event.preventDefault();
 
@@ -11,7 +12,7 @@ const AuctionForm = props => {
     props.onSubmit({
       title: formData.get("title"),
       details: formData.get("details"),
-      ends_on: formData.get("ends_on"),
+      end_date: formData.get("end_date"),
       reserve_price: formData.get("reserve_price")
     });
   };
@@ -27,12 +28,12 @@ const AuctionForm = props => {
         <textarea name="details" id="details" cols="60" rows="4" />
       </div>
       <div>
-        {/* <label htmlFor="details">Details</label> <br />
-        <textarea name="details" id="details" cols="60" rows="4" /> */}
+        <label htmlFor="end_date">Ends on</label>
+        <input type="date" name="end_date" id="end_date" cols="60" rows="4" />
       </div>
       <div>
-        {/* <label htmlFor="details">Details</label> <br />
-        <textarea name="details" id="details" cols="60" rows="4" /> */}
+        <label htmlFor="reserve_price">Reserve Price $</label>
+        <input type="text" pattern="[0-9]*" name="reserve_price" id="reserve_price" cols="60" rows="4" />
       </div>
       <div>
         <input type="submit" value="Submit" />
