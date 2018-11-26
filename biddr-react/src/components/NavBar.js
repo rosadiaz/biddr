@@ -5,6 +5,7 @@ function NavBar(props) {
   return (
     <nav className="NavBar">
       <NavLink exact to="/">Welcome</NavLink>
+      <NavLink exact to="/auctions">All Auctions</NavLink>
       <NavLink exact to="/auctions/new">New Auction</NavLink>
     </nav>
   );

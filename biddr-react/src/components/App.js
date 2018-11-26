@@ -4,6 +4,7 @@ import NewAuctionPage from './NewAuctionPage';
 import { BrowserRouter, Route } from "react-router-dom";
 import WelcomePage from './WelcomePage';
 import NavBar from './NavBar';
+import IndexAuctionPage from './IndexAuctionPage';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
             <NavBar />
           </header>
             <Route path="/" exact component={WelcomePage} />
+            <Route path="/auctions" exact component={ IndexAuctionPage} />
             <Route path="/auctions/new" exact component={NewAuctionPage} />
         </div>
       </BrowserRouter>
