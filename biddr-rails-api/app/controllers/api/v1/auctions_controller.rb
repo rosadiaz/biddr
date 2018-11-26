@@ -5,6 +5,12 @@ class Api::V1::AuctionsController < ApplicationController
     render json:auction  
   end
 
+  def index
+    auction = Auction.all
+    render json: auction
+  end
+
+
   private
   def auction_params
     params.require(:auction).permit(:title, :details, :end_date, :reserve_price)
