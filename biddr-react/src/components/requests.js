@@ -22,4 +22,14 @@ export const Auction = {
       return res.json()
     });
   },
+  one(id) {
+    return fetch(`${BASE_URL}/auctions/${id}`, {
+      method: "GET",
+      header: {
+        "Content-Type": "application/json"
+      }
+    }).then(res => {
+      return res.json()
+    });
+  },
 };
