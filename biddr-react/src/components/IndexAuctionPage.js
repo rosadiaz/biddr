@@ -27,7 +27,7 @@ class IndexAuctionPage extends Component {
             <ul>
               {this.state.auctions.map(auction => (
                 <li key={auction.id}>
-                  <small><b>{auction.id}</b></small>{" - "}
+                  <small><b>{"# "}{auction.id}</b></small> {" "}
                   <Link to={`/auctions/${auction.id}`}>{auction.title}</Link>
                 </li>
               ))}

@@ -28,8 +28,10 @@ class ShowAuctionPage extends Component {
     }
     return (
       <main className="ShowAuctionPage">
-        <h2>{this.state.auction.id} - {this.state.auction.title}</h2>
+        <h2># {this.state.auction.id} {this.state.auction.title}</h2>
+        <h3>${this.state.auction.reserve_price} reserve price</h3>
         <p>{this.state.auction.details}</p>
+        <em><p>Bidding will close on {this.state.auction.end_date}</p></em>
       </main>
     );
   }
