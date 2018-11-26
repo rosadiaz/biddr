@@ -32,4 +32,15 @@ export const Auction = {
       return res.json()
     });
   },
+  update(params) {
+    return fetch(`${BASE_URL}/auctions/${params.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(params)
+    }).then(res => {
+      return res.json()
+    });
+  }
 };
