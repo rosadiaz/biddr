@@ -10,6 +10,10 @@ class Api::V1::AuctionsController < ApplicationController
     render json: auction
   end
 
+  def show
+    auction = Auction.find params[:id]
+    render json: auction
+  end
 
   private
   def auction_params
