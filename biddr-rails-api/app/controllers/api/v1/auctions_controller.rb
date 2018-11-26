@@ -15,6 +15,12 @@ class Api::V1::AuctionsController < ApplicationController
     render json: auction
   end
 
+  def destroy
+    auction = Auction.find params[:id]
+    auction.destroy
+    render json: {status: :success}
+  end
+
   private
   def auction_params
     params.require(:auction).permit(:title, :details, :end_date, :reserve_price)
