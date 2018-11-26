@@ -5,36 +5,36 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config.
-/.bundle
+/biddr-rails-api/.bundle
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
+/biddr-rails-api/log/*
+/biddr-rails-api/tmp/*
+!/biddr-rails-api/log/.keep
+!/biddr-rails-api/tmp/.keep
 
 # Ignore uploaded files in development
-/storage/*
-!/storage/.keep
+/biddr-rails-api/storage/*
+!/biddr-rails-api/storage/.keep
 
-.byebug_history
+.biddr-rails-api/byebug_history
 
 # Ignore master key for decrypting credentials and more.
-/config/master.key
+/biddr-rails-api/config/master.key
 
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+/biddr-react/node_modules
+/biddr-react/.pnp
+.biddr-react/pnp.js
 
 # testing
-/coverage
+/biddr-react/coverage
 
 # production
-/build
+/biddr-react/build
 
 # misc
 .DS_Store
@@ -43,6 +43,6 @@
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+/biddr-react/npm-debug.log*
+/biddr-react/yarn-debug.log*
+/biddr-react/yarn-error.log*
