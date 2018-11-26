@@ -31,5 +31,13 @@ module BiddrRailsApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    config.generators do |g|
+      # Don't create helpers files when using
+      # the generator
+      g.helper = false
+      # Don't create assets files when using the
+      # generator
+      g.assets = false
+    end
   end
 end
