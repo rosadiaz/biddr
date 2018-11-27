@@ -15,7 +15,6 @@ class IndexAuctionPage extends Component {
       this.setState({ 
         auctions: auctions
       })
-      console.log(this.state.auctions)
     })
   }
 

@@ -23,7 +23,7 @@ class EditAuctionPage extends Component {
     Auction.update(formData)
     .then((res) => {
       console.log("success", res);
-      this.props.history.push(`/`);
+      // this.props.history.push(`/`);
     })
     .catch((error) => {
       console.log(error)

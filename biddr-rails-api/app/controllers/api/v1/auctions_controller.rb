@@ -21,6 +21,16 @@ class Api::V1::AuctionsController < ApplicationController
     render json: {status: :success}
   end
 
+  def update
+    puts ("%%%%%%%%%%%%%%%%%%%%%%")
+    puts ("update auctions.controler")
+    puts ("%%%%%%%%%%%%%%%%%%%%%%")
+    auction = Auction.find params[:id]
+    if auction.update auction_params
+      render json: auction
+    end
+  end
+
   private
   def auction_params
     params.require(:auction).permit(:title, :details, :end_date, :reserve_price)

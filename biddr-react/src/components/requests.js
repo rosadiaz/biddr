@@ -40,6 +40,21 @@ export const Auction = {
       },
       body: JSON.stringify(params)
     }).then(res => {
+      console.log(res)
+      return res.json()
+    }); 
+  }
+};
+
+export const Bid = {
+  all(id) {
+    return fetch(`${BASE_URL}/auctions/${id}/bids`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json"
+      },
+    }).then(res => {
+      console.log(res)
       return res.json()
     });
   }

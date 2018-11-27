@@ -6,8 +6,8 @@ class AuctionForm extends Component {
     this.state = {
       auction: props.auction || {}
     }
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = props.onSubmit;
+    // this.handleChange = props.handleChange;
   }
   
   handleSubmit = event => {
@@ -31,20 +31,23 @@ class AuctionForm extends Component {
 
     switch(name) {
       case 'title':
-        return this.setState({auction: { ...this.state.auction, title: value }});
+        this.setState({auction: { ...this.state.auction, title: value }});
+        break 
       case 'details':
-        return this.setState({auction: { ...this.state.auction, details: value }});
+        this.setState({auction: { ...this.state.auction, details: value }});
+        break 
       case 'end_date':
-        return this.setState({auction: { ...this.state.auction, end_date: value }});
+        this.setState({auction: { ...this.state.auction, end_date: value }});
+        break 
       case 'reserve_price':
-        return this.setState({auction: { ...this.state.auction, reserve_price: value }});
+        this.setState({auction: { ...this.state.auction, reserve_price: value }});
+        break 
       default:
-        return this.state
+        break 
     }
   };
   
   componentDidMount() {
-    console.log(this.state)
   };
   
   render() {
