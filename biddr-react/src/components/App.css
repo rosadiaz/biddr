@@ -52,7 +52,6 @@ main {
 
 main > div {
   justify-content: center;
-  display: flex
 }
 
 ul {
@@ -61,6 +60,21 @@ ul {
 }
 
 .ShowAuctionPage {
-  max-width: 60%;
+  /* max-width: 60%; */
   text-align: left;
+  /* display: flex; */
+}
+
+.AuctionInfo {
+  display: flex;
+}
+.Auction {
+  /* display: flex; */
+  padding: 20px;
+  margin: 20px;
+}
+
+.Bids {
+  padding: 20px;
+  margin: 20px;
 }
