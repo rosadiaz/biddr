@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.NavBar {
+  display: flex;
+  padding: 10px;
+}
+
+.NavBar > * {
+  margin: 0 10px;
+}
+
+.NavBar > a {
+  color: lightgrey;
+}
+
+.NavBar > a.active {
+  color: deepskyblue;
+}
+
+.AuctionForm {
+  /* background-color: lightsalmon; */
+  text-align: left;
+  max-width: 50%;
+  padding: 20px;
+}
+
+.AuctionForm > div {
+  padding: 5px;
+}
+
+main {
+  margin: 10px;
+  padding: 20px;
+}
+
+main > div {
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+.ShowAuctionPage {
+  /* max-width: 60%; */
+  text-align: left;
+  /* display: flex; */
+}
+
+.AuctionInfo {
+  display: flex;
+}
+.Auction {
+  /* display: flex; */
+  padding: 20px;
+  margin: 20px;
+}
+
+.Bids {
+  padding: 20px;
+  margin: 20px;
+}
